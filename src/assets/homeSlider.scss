@@ -1,0 +1,102 @@
+@import "./variable.scss";
+
+.home_slider {
+  position: relative;
+  padding: 0;
+  height: calc(100vh - 90px);
+  background: #004f96;
+
+  .home_swiper {
+    height: 100%;
+
+    .home_slider_parent {
+      min-height: 100%;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      @media (max-width: $md) {
+        &.banner_1 {
+          background-image: url("/banner/1-small.jpg") !important;
+        }
+        &.banner_2 {
+          background-image: url("/banner/2-small.jpg") !important;
+        }
+        &.banner_3 {
+          background-image: url("/banner/3-small.jpg") !important;
+        }
+        &.banner_4 {
+          background-image: url("/banner/4-small.jpg") !important;
+        }
+        &.banner_5 {
+          background-image: url("/banner/5-small.jpg") !important;
+        }
+      }
+
+      .slider_inner_content {
+        max-width: fit-content;
+      }
+      .home_slider_content {
+        @media (max-width: $md) {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+        .banner_subtitle {
+          border-bottom: 2px solid #fff;
+          padding-bottom: 0.2rem;
+          margin-bottom: 1.5rem;
+          position: relative;
+          z-index: 1;
+          letter-spacing: 1px;
+          @media (max-width: $md) {
+            width: 100%;
+            text-align: center;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 17%;
+            height: 2px;
+            background: #038dfc;
+            bottom: -2px;
+            z-index: 11;
+
+            @media (max-width: $md) {
+              left: 50%;
+              width: 40%;
+              transform: translateX(-50%);
+            }
+          }
+          .banner_subtitle_text {
+            color: white;
+            font-weight: 700;
+            letter-spacing: 2px;
+          }
+        }
+
+        .slider_title {
+          font-weight: 700;
+          color: white;
+          font-size: 32px;
+          @media (min-width: 1280px) and (max-width: 1700px) {
+            font-size: 48px;
+          }
+          @media (min-width: 1701px) {
+            font-size: 57.6px;
+          }
+        }
+        .slider_dec {
+          font-size: 20px;
+          color: white;
+        }
+
+        .main_btn {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import "./variable.scss";
+
+.services_section {
+  background: url(/ads-headerbg.png), #2c3036;
+  background-color: #2c3036;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: initial;
+  padding: 5rem 0;
+  .section_title {
+    margin-bottom: 3rem;
+    color: #5d626d;
+  }
+
+  .service_content {
+    .service_title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #dac786;
+    }
+    p {
+      color: #fff;
+      max-width: 700px;
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .custom_card {
+    &:hover {
+      &::before {
+        width: 0;
+      }
+
+      .service_card_title {
+        a {
+          color: #dac786 !important;
+        }
+      }
+
+      .service_card_btn {
+        visibility: visible !important;
+        opacity: 1 !important;
+        cursor: pointer !important;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(1, 7, 140, 0.4);
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      transition: 500ms;
+    }
+    .inner_service_card {
+      z-index: 11;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      display: grid;
+      text-align: center;
+      place-items: center;
+      gap: 0.7rem;
+      padding: 2rem;
+
+      .img_container {
+        height: 66px;
+        width: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+      }
+
+      .service_card_title {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .service_card_des {
+        color: white;
+        font-size: 1.1rem;
+      }
+
+      .service_card_btn {
+        visibility: hidden;
+        cursor: none;
+        opacity: 0;
+        transition: 0.5s;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #dac786;
+
+        &:hover {
+          transform: scale(1.1) !important;
+          color: white;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

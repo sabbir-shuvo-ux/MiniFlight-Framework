@@ -35,6 +35,28 @@ const BrandSlider = () => {
     <Swiper
       slidesPerView={7}
       spaceBetween={30}
+      breakpoints={{
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1400: {
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      }}
       autoplay={{ delay: 2000, disableOnInteraction: false }}
       modules={[Autoplay]}
       loop={true}

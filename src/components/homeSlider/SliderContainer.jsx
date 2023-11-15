@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 // swiper css
 import "swiper/css";
 
@@ -11,7 +11,14 @@ import Link from "next/link";
 
 const SliderContainer = () => {
   return (
-    <Swiper className="home_swiper">
+    <Swiper
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
+      className="home_swiper"
+    >
       {homeSliderData.map((slide, index) => {
         return (
           <SwiperSlide key={index}>

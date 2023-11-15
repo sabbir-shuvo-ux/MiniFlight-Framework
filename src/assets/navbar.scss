@@ -186,6 +186,7 @@
   // mobile top navbar
   .top_navbar_phone {
     display: flex;
+    height: 40px;
     @media (min-width: $lg) {
       display: none !important;
     }

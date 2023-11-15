@@ -150,7 +150,9 @@
   .mobile_menus {
     padding-top: 1rem;
     @media (min-width: $lg) {
-      display: none !important;
+      &.navbar-collapse {
+        display: none !important;
+      }
     }
 
     .nav-link {

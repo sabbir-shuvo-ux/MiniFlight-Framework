@@ -1,5 +1,6 @@
 import ApplicationsSection from "@/components/applicationsSection/ApplicationsSection";
 import BrandsSection from "@/components/brandsSection/BrandsSection";
+import GoogleMap from "@/components/googleMap/GoogleMap";
 import HomeSlider from "@/components/homeSlider/HomeSlider";
 import RecentWorkSection from "@/components/recentWork/RecentWorkSection";
 import ServicesSection from "@/components/servicesSection/ServicesSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <ApplicationsSection />
       <BrandsSection />
       <RecentWorkSection />
+      <GoogleMap />
     </>
   );
 }

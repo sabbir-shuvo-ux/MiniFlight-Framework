@@ -1,0 +1,36 @@
+.recent_work_section {
+  .recent_card {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 7, 140, 0.4);
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: 500ms;
+    }
+
+    &:hover {
+      &::before {
+        width: 0%;
+      }
+    }
+    .work_card_title {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+
+      font-weight: 700;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

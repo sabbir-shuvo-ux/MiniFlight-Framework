@@ -1,0 +1,50 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./variable.scss";
+
+// globally container-fluid width will be 85%
+.container-fluid {
+  &.custom_fluid {
+    @media (min-width: $_3l) {
+      width: 85%;
+    }
+  }
+}
+
+/* ==================================================
+# Theme Styles End 
+===================================================== #*/
+
+/* ==================================================
+# Global css
+===================================================== #*/
+.main_btn {
+  outline: none;
+  border: none;
+  background: $main_color;
+  border-left: 7px solid #fff;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  color: white;
+  letter-spacing: 1px;
+  transition: 300ms;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: $secoundary_color;
+    z-index: -1;
+    transition: 300ms;
+  }
+}

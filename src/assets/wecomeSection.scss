@@ -1,0 +1,36 @@
+@import "./variable.scss";
+
+.wecome_section {
+  .section_title {
+    font-size: 1.5rem;
+    color: #3f444e;
+  }
+
+  .custom_tabs_nav {
+    .nav-link {
+      color: black;
+      &.active {
+        background: transparent;
+        color: $main_color;
+      }
+    }
+  }
+
+  .welcome_section_inner_content {
+    h2 {
+      color: $main_color;
+      font-weight: 700;
+      @media (min-width: 1200px) {
+        font-size: 4rem;
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+    ul {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+}

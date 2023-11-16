@@ -8,7 +8,7 @@ const DesktopMenu = () => {
     <div className="desktop_menus">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0 desktop_navbar">
         <li className="nav-item custom_dropdown">
-          <Link className="nav-link" href="/about" title="About Our Company">
+          <Link className="nav-link" href={"#"} title="About Our Company">
             about
           </Link>
 

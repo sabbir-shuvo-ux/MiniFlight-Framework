@@ -25,6 +25,7 @@ const Navbar = () => {
               src={Logo}
               className="w-100 h-auto object-fit-cover"
               alt="Automatic Door supply Logo"
+              priority
             />
           </Link>
           <button

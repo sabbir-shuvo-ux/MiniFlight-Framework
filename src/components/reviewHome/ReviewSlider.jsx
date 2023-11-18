@@ -17,6 +17,10 @@ const ReviewSlider = () => {
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           0: {
             slidesPerView: 1,

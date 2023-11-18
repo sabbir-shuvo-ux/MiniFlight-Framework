@@ -8,6 +8,7 @@ import "swiper/css";
 // slider data
 import homeSliderData from "@/AppData/homeSliderData";
 import Link from "next/link";
+import Image from "next/image";
 
 const SliderContainer = () => {
   return (
@@ -23,9 +24,18 @@ const SliderContainer = () => {
         return (
           <SwiperSlide key={index}>
             <div
-              className={`home_slider_parent banner_${index + 1}`}
-              style={{ backgroundImage: `url(${slide.img.src})` }}
+              className={`home_slider_parent banner_${
+                index + 1
+              } position-relative`}
             >
+              <Image
+                src={slide.img}
+                alt={slide.title}
+                title={slide.title}
+                className="d_md_none"
+                fill
+                priority={index === 0 ? true : false}
+              />
               <div className="home_slider_content container-fluid custom_fluid">
                 <div className="slider_inner_content">
                   <div className="banner_subtitle">

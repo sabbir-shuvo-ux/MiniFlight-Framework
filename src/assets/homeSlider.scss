@@ -15,8 +15,13 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-
+      .d_md_none {
+        z-index: -1;
+      }
       @media (max-width: $md) {
+        .d_md_none {
+          display: none;
+        }
         &.banner_1 {
           background-image: url("/banner/1-small.webp") !important;
         }

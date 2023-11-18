@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "@/assets/globals.scss";
 import BootstrapScript from "@/utils/BootstrapScript";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Helllo || test test ",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className={pdfPro.className}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
         <BootstrapScript />
       </body>
     </html>

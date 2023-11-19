@@ -1,10 +1,16 @@
-import React from "react";
+import "@/assets/footer.scss";
+import FooterMain from "./FooterMain";
+import DesktopStickyFooter from "./DesktopStickyFooter";
 
 const Footer = () => {
   return (
-    <footer>
-      <h1>Footer</h1>
-    </footer>
+    <>
+      <footer className="footer_main">
+        <FooterMain />
+
+        <DesktopStickyFooter />
+      </footer>
+    </>
   );
 };
 

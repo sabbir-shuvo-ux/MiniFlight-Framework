@@ -1,7 +1,7 @@
 @import "./variable.scss";
 
 .services_section {
-  background: url(/ads-headerbg.png), #2c3036;
+  background: $section_bg, #2c3036;
   background-color: #2c3036;
   background-blend-mode: overlay;
   background-position: center;

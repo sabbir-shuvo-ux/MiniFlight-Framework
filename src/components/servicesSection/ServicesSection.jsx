@@ -34,6 +34,7 @@ const ServicesSection = () => {
                   <Image
                     src={service.img}
                     alt={service.title}
+                    sizes="(min-width: 1600px) calc(21.29vw - 25px), (min-width: 780px) calc(25vw - 24px), calc(100vw - 24px)"
                     title={service.title}
                     className="w-100 h-auto"
                   />

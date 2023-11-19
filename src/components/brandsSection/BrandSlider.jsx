@@ -67,6 +67,7 @@ const BrandSlider = () => {
           <div className="">
             <Image
               src={brand}
+              sizes="150px"
               alt={`barnd img ${index}`}
               width={150}
               height={80}

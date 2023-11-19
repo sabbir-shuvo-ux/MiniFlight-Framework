@@ -20,6 +20,7 @@ const ApplicationsSection = () => {
               <h2 className="faq_header_title">Door Systems</h2>
               <h3 className="faq_header_subtitle">for Every Application</h3>
             </div>
+            {/* faq */}
             <FaqHome />
           </div>
           <div className="col-md-6">
@@ -27,6 +28,7 @@ const ApplicationsSection = () => {
               <Image
                 src={FaqImg}
                 className="w-100 h-auto"
+                sizes="(min-width: 1600px) 42.5vw, (min-width: 780px) calc(50vw - 24px), calc(100vw - 24px)"
                 alt="Automatic Door Supply Door"
                 title="Automatic Door Supply Door"
               />

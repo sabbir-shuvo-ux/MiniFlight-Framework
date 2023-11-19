@@ -29,7 +29,7 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 999;
+      z-index: 50;
       color: #ecedee;
       cursor: pointer;
       @media (min-width: 1600px) {
@@ -41,7 +41,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      z-index: 999;
+      z-index: 50;
       color: #ecedee;
       cursor: pointer;
       @media (min-width: 1600px) {
@@ -53,6 +53,11 @@
     .review_container {
       max-width: 350px;
       margin: 0 auto;
+      padding: 2rem;
+
+      @media (max-width: $md) {
+        padding: 0;
+      }
 
       .img_container {
         max-width: 130px;

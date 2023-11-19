@@ -37,6 +37,7 @@ const RecentWorkSection = () => {
                 <Image
                   src={work.img}
                   alt={work.title}
+                  sizes="(min-width: 1600px) calc(21.29vw - 41px), (min-width: 780px) calc(25vw - 40px), calc(100vw - 40px)"
                   title={work.title}
                   className="w-100 h-auto"
                 />

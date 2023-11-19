@@ -88,6 +88,7 @@ const WelcomeSection = () => {
                       src={WhoWeAreimg}
                       className="w-100 h-auto"
                       alt="Why Choose Us"
+                      sizes="(min-width: 1600px) 42.5vw, (min-width: 780px) calc(50vw - 24px), calc(100vw - 24px)"
                     />
                   </div>
                 </div>
@@ -127,6 +128,7 @@ const WelcomeSection = () => {
                     <Image
                       src={AccreditationImg}
                       className="w-100 h-auto"
+                      sizes="(min-width: 1600px) 42.5vw, (min-width: 780px) calc(50vw - 24px), calc(100vw - 24px)"
                       alt="Accreditation"
                     />
                   </div>

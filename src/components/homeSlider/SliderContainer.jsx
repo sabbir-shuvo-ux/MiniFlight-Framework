@@ -56,6 +56,7 @@ const SliderContainer = () => {
                 title={slide.title}
                 className="d_md_none"
                 fill
+                sizes="(min-width: 2900px) calc(80vw + 580px), (min-width: 2560px) calc(31.25vw + 1760px), (min-width: 2160px) calc(52.63vw + 1023px), (min-width: 1900px) 1900px, (min-width: 1740px) 1740px, (min-width: 1620px) 1620px, (min-width: 1400px) 1400px, (min-width: 1140px) calc(25vw + 855px), (min-width: 920px) 920px, (min-width: 800px) 800px, (min-width: 740px) 700px, calc(95.24vw + 14px)"
                 priority={index === 0 ? true : false}
               />
               <div className="home_slider_content container-fluid custom_fluid">

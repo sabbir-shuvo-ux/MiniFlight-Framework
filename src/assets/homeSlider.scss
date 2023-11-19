@@ -18,6 +18,26 @@
       .d_md_none {
         z-index: -1;
       }
+      @media (max-width: $md) {
+        .d_md_none {
+          display: none;
+        }
+        &.banner_1 {
+          background-image: url("/banner/1-small.webp") !important;
+        }
+        &.banner_2 {
+          background-image: url("/banner/2-small.webp") !important;
+        }
+        &.banner_3 {
+          background-image: url("/banner/3-small.webp") !important;
+        }
+        &.banner_4 {
+          background-image: url("/banner/4-small.webp") !important;
+        }
+        &.banner_5 {
+          background-image: url("/banner/5-small.webp") !important;
+        }
+      }
 
       .slider_inner_content {
         max-width: fit-content;

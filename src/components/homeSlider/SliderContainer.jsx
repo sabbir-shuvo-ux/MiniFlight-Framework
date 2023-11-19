@@ -1,7 +1,4 @@
 "use client";
-
-import { useState, useEffect } from "react";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -14,27 +11,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const SliderContainer = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      // Check the window width to determine mobile or desktop view
-      const windowWidth = window.innerWidth;
-      setIsMobile(windowWidth < 768); // Change the value as per your breakpoint
-    };
-
-    // Initial check on mount
-    handleResize();
-
-    // Event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <Swiper
       autoplay={{
@@ -53,7 +29,7 @@ const SliderContainer = () => {
               } position-relative`}
             >
               <Image
-                src={isMobile ? slide.mobileImg : slide.img}
+                src={slide.img}
                 alt={slide.title}
                 title={slide.title}
                 className="d_md_none"

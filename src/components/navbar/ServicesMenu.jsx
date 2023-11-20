@@ -1,14 +1,17 @@
 import Link from "next/link";
-import { services } from "@/AppData/menuData";
+import menuData from "@/AppData/menuData";
 
 const ServicesMenu = ({ isMobile }) => {
+  const { services } = menuData;
+
+  const { menus, path } = services;
   return (
     <ul className={isMobile ? "dropdown-menu" : "dropdown_menu big_with"}>
-      {services.map((service, index) => {
+      {menus.map((service, index) => {
         const newService = service.replace(/-/g, " ");
         return (
           <li key={index} className="menu_item">
-            <Link href={`/${service}`} title={newService}>
+            <Link href={`/${path}/${service}`} title={newService}>
               {newService}
             </Link>
           </li>

@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "@/assets/globals.scss";
-// import BootstrapScript from "@/utils/BootstrapScript";
+import BootstrapScript from "@/utils/BootstrapScript";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
-        {/* <BootstrapScript /> */}
+        <BootstrapScript />
       </body>
     </html>
   );

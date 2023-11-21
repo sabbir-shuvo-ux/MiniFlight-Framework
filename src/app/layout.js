@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "@/assets/globals.scss";
-import BootstrapScript from "@/utils/BootstrapScript";
-import Navbar from "@/components/navbar/Navbar";
+import NavbarMain from "@/components/navbar/NavbarMain";
 import Footer from "@/components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -30,10 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={pdfPro.className}>
-        <Navbar />
+        <NavbarMain />
         <main>{children}</main>
         <Footer />
-        <BootstrapScript />
       </body>
     </html>
   );

@@ -1,9 +1,11 @@
+"use client";
 import "@/assets/navbar.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa6";
 // imgs
 import Logo from "../../../public/ads-logo.jpg";
+import Navbar from "react-bootstrap/Navbar";
 
 // same level componets
 import NavbarActions from "./NavbarActions";
@@ -11,11 +13,11 @@ import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 import MobileTopNavbar from "./MobileTopNavbar";
 
-const Navbar = () => {
+const NavbarMain = () => {
   return (
     <header className="custom_navbar">
       <MobileTopNavbar />
-      <nav className="navbar navbar-expand-lg">
+      <Navbar collapseOnSelect expand="lg" className="navbar navbar-expand-lg">
         <div className="container-fluid custom_fluid">
           <Link
             className="navbar-brand position-relative navbar_logo"
@@ -28,17 +30,13 @@ const Navbar = () => {
               priority
             />
           </Link>
-          <button
-            className="navbar-toggler shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileVersionNavbar"
-            aria-controls="mobileVersionNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="shadow-none"
           >
             <FaBars size={30} color="white" />
-          </button>
+          </Navbar.Toggle>
 
           {/* desktop view menus */}
           <DesktopMenu />
@@ -47,9 +45,9 @@ const Navbar = () => {
           {/* Call to action btns */}
           <NavbarActions />
         </div>
-      </nav>
+      </Navbar>
     </header>
   );
 };
 
-export default Navbar;
+export default NavbarMain;

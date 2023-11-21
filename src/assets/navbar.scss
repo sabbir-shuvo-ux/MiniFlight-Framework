@@ -115,7 +115,7 @@
             min-width: 200px;
           }
 
-          &.big_with {
+          &.big_width {
             max-width: 800px;
             width: 800px;
             height: auto;
@@ -167,9 +167,10 @@
     }
 
     .custom_mobile_dropdown {
-      .dropdown-menu {
+      .mobile_dropdown_container {
         max-height: 300px;
         overflow: scroll;
+        padding: 0;
       }
       .menu_item {
         a {

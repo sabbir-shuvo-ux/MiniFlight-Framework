@@ -1,9 +1,10 @@
 import Link from "next/link";
-import ServicesMenu from "./ServicesMenu";
-import ServiceAreaMenu from "./ServiceAreaMenu";
-import AboutMenuData from "./AboutMenuData";
+import DropdownMenus from "./DropdownMenus";
+import menuData from "@/AppData/menuData";
 
 const DesktopMenu = () => {
+  const { aboutData, serviceAreaData, services } = menuData;
+
   return (
     <div className="desktop_menus">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0 desktop_navbar">
@@ -13,7 +14,8 @@ const DesktopMenu = () => {
           </Link>
 
           {/* About data */}
-          <AboutMenuData />
+
+          <DropdownMenus data={aboutData.menus} extraClass="small_width" />
         </li>
         <li className="nav-item custom_dropdown">
           <Link
@@ -24,7 +26,11 @@ const DesktopMenu = () => {
             services
           </Link>
           {/* Services menu */}
-          <ServicesMenu />
+          <DropdownMenus
+            data={services.menus}
+            path={services.path}
+            extraClass="big_width"
+          />
         </li>
         <li className="nav-item custom_dropdown">
           <Link
@@ -35,7 +41,11 @@ const DesktopMenu = () => {
             service areas
           </Link>
           {/* Service area menu */}
-          <ServiceAreaMenu />
+          <DropdownMenus
+            data={serviceAreaData.menus}
+            path={serviceAreaData.path}
+            extraClass="big_width"
+          />
         </li>
         <li className="nav-item">
           <Link

@@ -1,59 +1,48 @@
+"use client";
 import Link from "next/link";
-import ServicesMenu from "./ServicesMenu";
-import ServiceAreaMenu from "./ServiceAreaMenu";
-import AboutMenuData from "./AboutMenuData";
+import DropdownMenus from "./DropdownMenus";
+import { NavDropdown, Navbar } from "react-bootstrap";
+import menuData from "@/AppData/menuData";
 
 const MobileMenu = () => {
+  const { aboutData, serviceAreaData, services } = menuData;
   return (
-    <div
-      className="collapse navbar-collapse mobile_menus"
-      id="mobileVersionNavbar"
-    >
+    <Navbar.Collapse id="mobileVersionNavbar" className="mobile_menus">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item dropdown custom_mobile_dropdown">
-          <Link
-            className="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            title="About Our Company"
-          >
-            about
-          </Link>
-          {/* Mobile Service menus */}
-          <AboutMenuData isMobile={true} />
-        </li>
+        <NavDropdown
+          title="About"
+          id="basic-nav-dropdown"
+          className="custom_mobile_dropdown"
+        >
+          {/* Mobile About menus */}
+          <DropdownMenus isMobile={true} data={aboutData.menus} />
+        </NavDropdown>
 
-        <li className="nav-item dropdown custom_mobile_dropdown">
-          <Link
-            className="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            title="Automatic Door Supply Services"
-          >
-            services
-          </Link>
+        <NavDropdown
+          title="Services"
+          id="basic-nav-dropdown"
+          className="custom_mobile_dropdown"
+        >
           {/* Mobile Service menus */}
-          <ServicesMenu isMobile={true} />
-        </li>
+          <DropdownMenus
+            isMobile={true}
+            data={services.menus}
+            path={services.path}
+          />
+        </NavDropdown>
 
-        <li className="nav-item dropdown custom_mobile_dropdown">
-          <Link
-            className="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            title="Automatic Door Supply Service Areas"
-          >
-            service areas
-          </Link>
+        <NavDropdown
+          title="Service Areas"
+          id="basic-nav-dropdown"
+          className="custom_mobile_dropdown"
+        >
           {/* Mobile Service menus */}
-          <ServiceAreaMenu isMobile={true} />
-        </li>
+          <DropdownMenus
+            isMobile={true}
+            data={serviceAreaData.menus}
+            path={serviceAreaData.path}
+          />
+        </NavDropdown>
         <li className="nav-item">
           <Link
             className="nav-link"
@@ -73,7 +62,7 @@ const MobileMenu = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </Navbar.Collapse>
   );
 };
 

@@ -6,11 +6,13 @@ export const metadata = {
 };
 
 const page = () => {
-  return <section>
-    <div className="container-fluid custom_fluid">
-      <h1>Hello There!</h1>
-    </div>
-  </section>;
+  return (
+    <section>
+      <div className="container-fluid custom_fluid">
+        <h1>Hello There!</h1>
+      </div>
+    </section>
+  );
 };
 
 export default page;

@@ -1,5 +1,3 @@
-import React from "react";
-
 // css
 import "@/assets/wecomeSection.scss";
 

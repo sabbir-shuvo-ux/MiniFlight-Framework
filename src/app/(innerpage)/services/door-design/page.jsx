@@ -1,7 +1,11 @@
 import React from "react";
 
 const DoorDesign = () => {
-  return <h1>DoorDesign</h1>;
+  return (
+    <div>
+      <h1>DoorDesign</h1>
+    </div>
+  );
 };
 
 export default DoorDesign;

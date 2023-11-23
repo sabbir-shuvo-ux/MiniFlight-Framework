@@ -1,0 +1,86 @@
+@import "./variable.scss";
+.inner_page_main {
+  .inner_page_header {
+    .inner_page_header_top {
+      padding: 5rem 0 4rem;
+
+      .inner_page_header_title {
+        position: relative;
+        z-index: 99;
+        color: white;
+        letter-spacing: 2px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .specials_links {
+      background: $secoundary_color;
+
+      @media (max-width: $lg) {
+        display: none;
+      }
+
+      .specials_links_btn {
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        display: block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .breadcrumb_section {
+    .breadcrumb_container {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+
+      .breadcrumb_item {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 5px;
+        color: $main_color;
+        text-transform: capitalize;
+        .indicator {
+          color: black;
+        }
+
+        .home_icon {
+          color: $main_color;
+        }
+      }
+      .breadcamp_active {
+        color: black;
+      }
+    }
+  }
+
+  .inner_page_sidebar {
+    ul {
+      li {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+        a {
+          display: block;
+          padding: 0.5rem 0;
+          color: #004f96;
+          text-transform: capitalize;
+          font-size: 18px;
+          letter-spacing: 1px;
+          text-decoration: none;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import DropdownMenus from "./DropdownMenus";
 import menuData from "@/AppData/menuData";
 
 const DesktopMenu = () => {
-  const { aboutData, serviceAreaData, services } = menuData;
+  const { aboutData, services } = menuData;
 
   return (
     <div className="desktop_menus">
@@ -32,21 +32,7 @@ const DesktopMenu = () => {
             extraClass="big_width"
           />
         </li>
-        <li className="nav-item custom_dropdown">
-          <Link
-            className="nav-link"
-            href="#"
-            title="Automatic Door Supply Service Areas"
-          >
-            service areas
-          </Link>
-          {/* Service area menu */}
-          <DropdownMenus
-            data={serviceAreaData.menus}
-            path={serviceAreaData.path}
-            extraClass="big_width"
-          />
-        </li>
+
         <li className="nav-item">
           <Link
             className="nav-link"

@@ -5,7 +5,7 @@ import { NavDropdown, Navbar } from "react-bootstrap";
 import menuData from "@/AppData/menuData";
 
 const MobileMenu = () => {
-  const { aboutData, serviceAreaData, services } = menuData;
+  const { aboutData, services } = menuData;
   return (
     <Navbar.Collapse id="mobileVersionNavbar" className="mobile_menus">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,18 +31,6 @@ const MobileMenu = () => {
           />
         </NavDropdown>
 
-        <NavDropdown
-          title="Service Areas"
-          id="basic-nav-dropdown"
-          className="custom_mobile_dropdown"
-        >
-          {/* Mobile Service menus */}
-          <DropdownMenus
-            isMobile={true}
-            data={serviceAreaData.menus}
-            path={serviceAreaData.path}
-          />
-        </NavDropdown>
         <li className="nav-item">
           <Link
             className="nav-link"

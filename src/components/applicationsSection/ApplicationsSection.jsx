@@ -3,7 +3,8 @@ import Image from "next/image";
 
 // image
 import FaqImg from "../../../public/faq/faq-img.jpg";
-import FaqHome from "./FaqHome";
+import Faq from "../FaqComponent/Faq";
+import { faqHomeData } from "@/AppData/faqHomeData";
 
 const ApplicationsSection = () => {
   return (
@@ -21,7 +22,7 @@ const ApplicationsSection = () => {
               <h3 className="faq_header_subtitle">for Every Application</h3>
             </div>
             {/* faq */}
-            <FaqHome />
+            <Faq data={faqHomeData} isHome={true} />
           </div>
           <div className="col-md-6">
             <div className="position-relative">

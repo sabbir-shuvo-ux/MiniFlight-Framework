@@ -2,6 +2,8 @@ import Breadcamp from "@/components/innerPageComponents/breadcamp/Breadcamp";
 import InnerPageHeader from "@/components/innerPageComponents/innerPageHeader/InnerPageHeader";
 import "@/assets/innerPage.scss";
 import InnerPageSidebar from "@/components/innerPageComponents/innerPageSidebar/InnerPageSidebar";
+import ReviewHome from "@/components/reviewHome/ReviewHome";
+import GoogleMap from "@/components/googleMap/GoogleMap";
 
 const InnerPageLayout = ({ children }) => {
   return (
@@ -16,6 +18,10 @@ const InnerPageLayout = ({ children }) => {
           <div className="col-lg-9 order-1 order-lg-2">{children}</div>
         </div>
       </div>
+      {/* Review slider */}
+      <ReviewHome />
+      {/* Google map */}
+      <GoogleMap />
     </div>
   );
 };

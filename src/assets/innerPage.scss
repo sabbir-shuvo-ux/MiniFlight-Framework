@@ -115,4 +115,28 @@
       }
     }
   }
+
+  .not_found_page_container {
+    h2,
+    h3 {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .spin_animation {
+      animation-name: spin;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }

@@ -5,7 +5,7 @@ import CertifiteService from "../../../public/certified-service.png";
 import reviewUSGoogle from "../../../public/review-us-on-google.png";
 import googleReview from "../../../public/google-review.png";
 
-import { socialIcons } from "@/AppData/SocialIcons";
+import { socialIcons } from "@/AppData/socialIcons";
 
 const DesktopStickyFooter = () => {
   return (

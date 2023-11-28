@@ -7,7 +7,7 @@ import ContactForm from "@/components/contactForm/ContactForm";
 import { CiMail } from "react-icons/ci";
 import GoogleMap from "@/components/googleMap/GoogleMap";
 import ReviewHome from "@/components/reviewHome/ReviewHome";
-import { socialIcons } from "@/AppData/SocialIcons";
+import { socialIcons } from "@/AppData/socialIcons";
 
 export const metadata = {
   title: "Contact Page",

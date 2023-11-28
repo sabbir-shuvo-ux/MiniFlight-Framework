@@ -27,3 +27,9 @@ export const generateMetadata = ({ params }) => {
     title: metaData.title,
   };
 };
+
+export const generateStaticParams = async ({ params }) => {
+  return Object.keys(innerPageDataContent).map((item) => ({
+    serviceId: item,
+  }));
+};

@@ -5,48 +5,9 @@ import CertifiteService from "../../../public/certified-service.png";
 import reviewUSGoogle from "../../../public/review-us-on-google.png";
 import googleReview from "../../../public/google-review.png";
 
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
-import { FiMapPin } from "react-icons/fi";
+import { socialIcons } from "@/AppData/socialIcons";
 
 const DesktopStickyFooter = () => {
-  const socialIcons = [
-    {
-      icon: <FaFacebookF size={30} color="white" />,
-      link: "#",
-      title: "Follow us on Facbook",
-    },
-    {
-      icon: <FaTwitter size={30} color="white" />,
-      link: "#",
-      title: "Follow us on Twitter",
-    },
-    {
-      icon: <FaLinkedin size={30} color="white" />,
-      link: "#",
-      title: "Follow us on Linkedin",
-    },
-    {
-      icon: <FaInstagram size={30} color="white" />,
-      link: "#",
-      title: "Follow us on Instagram",
-    },
-    {
-      icon: <FiMapPin size={30} color="white" />,
-      link: "#",
-      title: "Our Location",
-    },
-    {
-      icon: <FaYoutube size={30} color="white" />,
-      link: "#",
-      title: "subscribe us on Youtube",
-    },
-  ];
   return (
     <div className="fixed-bottom sticky_desktop_footer">
       <div className="container">

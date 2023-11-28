@@ -1,6 +1,9 @@
+"use client";
 import { PHONE_NUMBER } from "@/AppData/appConfig";
-
+import { usePopupContext } from "@/context/popupContext/PopupContext";
 const NavbarActions = () => {
+  const { setIsModalOpen } = usePopupContext();
+
   return (
     <div className="actions_btns large_screen">
       <div className="phone_number">
@@ -14,7 +17,7 @@ const NavbarActions = () => {
         </a>
       </div>
       <button
-        href={"/"}
+        onClick={() => setIsModalOpen(true)}
         className="main_btn"
         title="Get Estimate from Automatic Door Supply"
       >

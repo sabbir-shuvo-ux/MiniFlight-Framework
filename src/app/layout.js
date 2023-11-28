@@ -8,6 +8,7 @@ export const metadata = {
   title: "Automatic Door Supply",
   description:
     "A local company providing door design, door fabrication, door installation, door repair throughout in New York.",
+  metadataBase: new URL("https://dm-freamwork.vercel.app/"),
 };
 
 const pdfPro = localFont({

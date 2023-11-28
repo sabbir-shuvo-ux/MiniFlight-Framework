@@ -1,0 +1,29 @@
+@import "./variable.scss";
+
+.contact_page {
+  padding-bottom: 6rem;
+  .contact_form_head {
+    h2 {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: #959595;
+      .mail_icon {
+        color: $main_color;
+      }
+    }
+  }
+
+  .custom_form_control {
+    &::placeholder {
+      color: #959595;
+    }
+  }
+
+  .main_btn {
+    border-radius: 50px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

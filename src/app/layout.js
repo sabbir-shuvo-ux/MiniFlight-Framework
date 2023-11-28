@@ -4,6 +4,7 @@ import NavbarMain from "@/components/navbar/NavbarMain";
 import Footer from "@/components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// metadata
 export const metadata = {
   title: "Automatic Door Supply",
   description:
@@ -11,6 +12,7 @@ export const metadata = {
   metadataBase: new URL("https://dm-freamwork.vercel.app/"),
 };
 
+// extranal fonts
 const pdfPro = localFont({
   src: [
     {

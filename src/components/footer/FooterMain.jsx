@@ -5,6 +5,7 @@ import { PHONE_NUMBER } from "@/AppData/appConfig";
 // imgs
 import Logo from "../../../public/ads-logo.jpg";
 import OraikoLogo from "../../../public/logo-oraiko.png";
+import PopUpBtn from "./PopUpBtn";
 
 const FooterMain = () => {
   const serviceAreas = [
@@ -48,9 +49,7 @@ const FooterMain = () => {
             <p className="footer_address">City Name, ST, 09876</p>
           </div>
         </div>
-        <div className="col-md-2 text-start text-md-end mt-3 mt-md-0">
-          <button className="main_btn">Get Estimate</button>
-        </div>
+        <PopUpBtn />
       </div>
       {/* middle footer */}
       <div className="row mt-4">

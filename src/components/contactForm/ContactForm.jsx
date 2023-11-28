@@ -20,7 +20,7 @@ const ContactForm = () => {
       <input
         type="email"
         className="form-control shadow-none rounded-0 custom_form_control my-3"
-        placeholder="EMAIL"
+        placeholder="Email"
         required
       />
       <textarea

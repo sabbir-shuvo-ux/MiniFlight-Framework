@@ -3,7 +3,12 @@ import "@/assets/globals.scss";
 import NavbarMain from "@/components/navbar/NavbarMain";
 import Footer from "@/components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { PopupContextProvider } from "@/context/popupContext/PopupContext";
+import dynamic from "next/dynamic";
 
+const QuotePopup = dynamic(() => import("@/components/modals/QuotePopup"), {
+  ssr: false,
+});
 // metadata
 export const metadata = {
   title: "Automatic Door Supply",
@@ -32,9 +37,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={pdfPro.className}>
-        <NavbarMain />
-        <main>{children}</main>
-        <Footer />
+        <PopupContextProvider>
+          <NavbarMain />
+          <main>{children}</main>
+          <Footer />
+          <QuotePopup />
+        </PopupContextProvider>
       </body>
     </html>
   );

@@ -46,6 +46,18 @@ const ReviewHome = () => {
 
         {/* Review slider */}
         <ReviewSlider />
+
+        <div className="row mt-5">
+          <div className="col-12">
+            <Link
+              href={"#"}
+              title="See All What Our Customers Say..."
+              className="main_btn"
+            >
+              SEE ALL
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

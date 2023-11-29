@@ -1,8 +1,8 @@
 "use client";
 import { PHONE_NUMBER } from "@/AppData/appConfig";
-import { usePopupContext } from "@/context/popupContext/PopupContext";
+import { useThemeContext } from "@/context/themeContext/ThemeContext";
 const NavbarActions = () => {
-  const { setIsModalOpen } = usePopupContext();
+  const { setIsModalOpen } = useThemeContext();
 
   return (
     <div className="actions_btns large_screen">

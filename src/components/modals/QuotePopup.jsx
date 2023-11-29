@@ -1,6 +1,6 @@
 "use client";
 import { socialIcons } from "@/AppData/socialIcons";
-import { usePopupContext } from "@/context/popupContext/PopupContext";
+import { useThemeContext } from "@/context/themeContext/ThemeContext";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -11,7 +11,7 @@ import { PHONE_NUMBER } from "@/AppData/appConfig";
 import ContactForm from "../contactForm/ContactForm";
 
 const QuotePopup = () => {
-  const { isModalOpen, setIsModalOpen } = usePopupContext();
+  const { isModalOpen, setIsModalOpen } = useThemeContext();
 
   const handleClose = () => setIsModalOpen(false);
   return (

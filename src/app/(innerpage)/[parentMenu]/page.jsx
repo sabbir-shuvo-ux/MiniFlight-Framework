@@ -12,16 +12,16 @@ const getPageContent = (id) => {
 };
 
 // main
-const InnerDetailsPage = ({ params }) => {
-  const data = getPageContent(params.serviceId);
+const ParentInnerDetailsPage = ({ params }) => {
+  const data = getPageContent(params.parentMenu);
   return <>{data.pageContent}</>;
 };
 
-export default InnerDetailsPage;
+export default ParentInnerDetailsPage;
 
 // generate metadata for each page
 export const generateMetadata = ({ params }) => {
-  const { metaData } = getPageContent(params.serviceId);
+  const { metaData } = getPageContent(params.parentMenu);
 
   return {
     title: metaData.title,
@@ -29,8 +29,8 @@ export const generateMetadata = ({ params }) => {
   };
 };
 
-export const generateStaticParams = async () => {
-  return Object.keys(innerPageDataContent).map((item) => ({
-    serviceId: item,
-  }));
-};
+// export const generateStaticParams = async () => {
+//   return Object.keys(innerPageDataContent).map((item) => ({
+//     parentMenu: item,
+//   }));
+// };

@@ -1,9 +1,9 @@
 "use client";
 
-import { usePopupContext } from "@/context/popupContext/PopupContext";
+import { useThemeContext } from "@/context/themeContext/ThemeContext";
 
 const PopUpBtn = () => {
-  const { setIsModalOpen } = usePopupContext();
+  const { setIsModalOpen } = useThemeContext();
 
   return (
     <div className="col-md-2 text-start text-md-end mt-3 mt-md-0">

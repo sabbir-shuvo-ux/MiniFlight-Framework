@@ -3,7 +3,7 @@ import "@/assets/globals.scss";
 import NavbarMain from "@/components/navbar/NavbarMain";
 import Footer from "@/components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { PopupContextProvider } from "@/context/popupContext/PopupContext";
+import { ThemeContextProvider } from "@/context/themeContext/ThemeContext";
 import dynamic from "next/dynamic";
 
 const QuotePopup = dynamic(() => import("@/components/modals/QuotePopup"), {
@@ -11,7 +11,10 @@ const QuotePopup = dynamic(() => import("@/components/modals/QuotePopup"), {
 });
 // metadata
 export const metadata = {
-  title: "Automatic Door Supply",
+  title: {
+    template: "%s | Automatic Door Supply",
+    default: "Automatic Door Supply",
+  },
   description:
     "A local company providing door design, door fabrication, door installation, door repair throughout in New York.",
   metadataBase: new URL("https://dm-freamwork.vercel.app/"),
@@ -37,12 +40,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={pdfPro.className}>
-        <PopupContextProvider>
+        <ThemeContextProvider>
           <NavbarMain />
           <main>{children}</main>
           <Footer />
           <QuotePopup />
-        </PopupContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

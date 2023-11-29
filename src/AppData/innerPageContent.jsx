@@ -4,129 +4,146 @@
 2. "metaData" object must have to "title" and "description" property.
 3. "pageContent" value should be react component or jsx.
 4. if you dont assign value of "pageContent" property then that page will be blank so make sure you import and assign value to "pageContent" property.
+5. if you want any page full width then use [ layout: 'FULL_PAGE' ] - use this property and value to use full page layout
 */
 
 // inner page components
-import AdaDoorOperator from "@/innerPages/ada-door-operator/AdaDoorOperator";
-import AirportsAutomaticDoors from "@/innerPages/airports-automatic-doors/AirportsAutomaticDoors";
-import AutomaticDoorRepair from "@/innerPages/automatic-door-repair/AutomaticDoorRepair";
-import AutomaticDoorsInstallation from "@/innerPages/automatic-doors-installation/AutomaticDoorsInstallation";
-import ChurchTempleAutomaticDoors from "@/innerPages/church-temple-automatic-doors/ChurchTempleAutomaticDoors";
-import CommercialAutomaticDoors from "@/innerPages/commercial-automatic-doors/CommercialAutomaticDoors";
-import CustomAutomaticDoors from "@/innerPages/custom-automatic-doors/CustomAutomaticDoors";
-import DoorDesign from "@/innerPages/door-design/DoorDesign";
-import DoorFabrication from "@/innerPages/door-fabrication/DoorFabrication";
-import HeavyTrafficAutomaticDoors from "@/innerPages/heavy-traffic-automatic-doors/HeavyTrafficAutomaticDoors";
-import HospitalAutomaticDoors from "@/innerPages/hospital-automatic-doors/HospitalAutomaticDoors";
-import InteriorAutomaticDoors from "@/innerPages/interior-automatic-doors/InteriorAutomaticDoors";
-import ResidentialBuildingAutomaticDoors from "@/innerPages/residential-building-automatic-doors/ResidentialBuildingAutomaticDoors";
-import SchoolAutomaticDoors from "@/innerPages/school-automatic-doors/SchoolAutomaticDoors";
-import StorefrontAutomaticDoors from "@/innerPages/storefront-automatic-doors/StorefrontAutomaticDoors";
+import AdaDoorOperator from "@/_pages_/ada-door-operator/AdaDoorOperator";
+import AirportsAutomaticDoors from "@/_pages_/airports-automatic-doors/AirportsAutomaticDoors";
+import AutomaticDoorRepair from "@/_pages_/automatic-door-repair/AutomaticDoorRepair";
+import AutomaticDoorsInstallation from "@/_pages_/automatic-doors-installation/AutomaticDoorsInstallation";
+import ChurchTempleAutomaticDoors from "@/_pages_/church-temple-automatic-doors/ChurchTempleAutomaticDoors";
+import CommercialAutomaticDoors from "@/_pages_/commercial-automatic-doors/CommercialAutomaticDoors";
+import Contact from "@/_pages_/contact/Contact";
+import CustomAutomaticDoors from "@/_pages_/custom-automatic-doors/CustomAutomaticDoors";
+import DoorDesign from "@/_pages_/door-design/DoorDesign";
+import DoorFabrication from "@/_pages_/door-fabrication/DoorFabrication";
+import HeavyTrafficAutomaticDoors from "@/_pages_/heavy-traffic-automatic-doors/HeavyTrafficAutomaticDoors";
+import HospitalAutomaticDoors from "@/_pages_/hospital-automatic-doors/HospitalAutomaticDoors";
+import InteriorAutomaticDoors from "@/_pages_/interior-automatic-doors/InteriorAutomaticDoors";
+import ResidentialBuildingAutomaticDoors from "@/_pages_/residential-building-automatic-doors/ResidentialBuildingAutomaticDoors";
+import SchoolAutomaticDoors from "@/_pages_/school-automatic-doors/SchoolAutomaticDoors";
+import StorefrontAutomaticDoors from "@/_pages_/storefront-automatic-doors/StorefrontAutomaticDoors";
 
 export const innerPageDataContent = {
+  "about-our-company": {
+    metaData: {
+      title: "About our company",
+      description: "About our company",
+    },
+    pageContent: <h1>About us page</h1>,
+  },
+  contact: {
+    layout: "FULL_PAGE",
+    metaData: {
+      title: "Contact",
+      description: "Contact",
+    },
+    pageContent: <Contact />,
+  },
   "door-design": {
     metaData: {
       title: "Door Design",
-      description: "Door design description",
+      description: "Door design",
     },
     pageContent: <DoorDesign />,
   },
   "door-fabrication": {
     metaData: {
-      title: "door-fabrication",
-      description: "door-fabrication",
+      title: "Door fabrication",
+      description: "Door fabrication",
     },
     pageContent: <DoorFabrication />,
   },
   "automatic-doors-installation": {
     metaData: {
-      title: "automatic-doors-installation",
-      description: "automatic-doors-installation description",
+      title: "Automatic doors installation",
+      description: "Automatic doors installation",
     },
     pageContent: <AutomaticDoorsInstallation />,
   },
 
   "automatic-door-repair": {
     metaData: {
-      title: "automatic-door-repair",
-      description: "automatic-door-repair",
+      title: "Automatic door repair",
+      description: "Automatic door repair",
     },
     pageContent: <AutomaticDoorRepair />,
   },
   "hospital-automatic-doors": {
     metaData: {
-      title: "hospital-automatic-doors",
-      description: "hello there",
+      title: "Hospital automatic doors",
+      description: "Hospital automatic doors",
     },
     pageContent: <HospitalAutomaticDoors />,
   },
   "commercial-automatic-doors": {
     metaData: {
-      title: "commercial-automatic-doors",
-      description: "hello there",
+      title: "Commercial automatic doors",
+      description: "Commercial automatic doors",
     },
     pageContent: <CommercialAutomaticDoors />,
   },
   "residential-building-automatic-doors": {
     metaData: {
-      title: "residential-building-automatic-doors",
-      description: "hello there",
+      title: "Residential building automatic doors",
+      description: "Residential building automatic doors",
     },
     pageContent: <ResidentialBuildingAutomaticDoors />,
   },
   "ada-door-operator": {
     metaData: {
-      title: "ada-door-operator",
-      description: "hello there",
+      title: "ada door operator",
+      description: "ada door operator",
     },
     pageContent: <AdaDoorOperator />,
   },
   "interior-automatic-doors": {
     metaData: {
-      title: "interior-automatic-doors",
-      description: "hello there",
+      title: "Interior automatic doors",
+      description: "Interior automatic doors",
     },
     pageContent: <InteriorAutomaticDoors />,
   },
   "airports-automatic-doors": {
     metaData: {
-      title: "airports-automatic-doors",
-      description: "hello there",
+      title: "Airports automatic doors",
+      description: "Airports automatic doors",
     },
     pageContent: <AirportsAutomaticDoors />,
   },
   "school-automatic-doors": {
     metaData: {
-      title: "school-automatic-doors",
-      description: "hello there",
+      title: "School automatic doors",
+      description: "School automatic doors",
     },
     pageContent: <SchoolAutomaticDoors />,
   },
   "church-temple-automatic-doors": {
     metaData: {
-      title: "church-temple-automatic-doors",
-      description: "hello there",
+      title: "Church temple automatic doors",
+      description: "Church temple automatic doors",
     },
     pageContent: <ChurchTempleAutomaticDoors />,
   },
   "heavy-traffic-automatic-doors": {
     metaData: {
-      title: "heavy-traffic-automatic-doors",
-      description: "hello there",
+      title: "Heavy traffic automatic doors",
+      description: "Heavy traffic automatic doors",
     },
     pageContent: <HeavyTrafficAutomaticDoors />,
   },
 
   "storefront-automatic-doors": {
     metaData: {
-      title: "storefront-automatic-doors",
-      description: "hello there",
+      title: "Storefront automatic doors",
+      description: "Storefront automatic doors",
     },
     pageContent: <StorefrontAutomaticDoors />,
   },
   "custom-automatic-doors": {
     metaData: {
-      title: "custom-automatic-doors",
+      title: "Custom automatic doors",
       description: "hello there",
     },
     pageContent: <CustomAutomaticDoors />,

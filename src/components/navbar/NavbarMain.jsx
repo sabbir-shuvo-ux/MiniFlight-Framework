@@ -39,12 +39,7 @@ const NavbarMain = () => {
             className="navbar-brand position-relative navbar_logo"
             href={"/"}
           >
-            <Image
-              src={Logo}
-              className="w-100 h-auto object-fit-cover"
-              alt="Automatic Door supply Logo"
-              priority
-            />
+            <h2>LOGO</h2>
           </Link>
 
           <Navbar.Toggle

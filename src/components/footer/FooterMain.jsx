@@ -30,15 +30,16 @@ const FooterMain = () => {
           <div className="footer_header_left">
             <Link
               href={"/"}
-              title="Automatic Door Supply"
-              className="position-relative footer_logo d-block"
+              title="Company Name"
+              className="position-relative footer_logo d-block text-decoration-none text-white"
             >
-              <Image
+              {/* <Image
                 src={Logo}
                 className="w-100 h-auto"
-                alt="Automatic Door Supply"
-                title="Automatic Door Supply"
-              />
+                alt="Company Name"
+                title="Company Name"
+              /> */}
+              <h2>LOGO</h2>
             </Link>
           </div>
         </div>
@@ -104,7 +105,7 @@ const FooterMain = () => {
       {/* copy right section */}
       <div className="row py-5">
         <div className="copy_right_text">
-          <p>Copyrights © 2023 Automatic Door Supply. All Rights Reserved.</p>
+          <p>Copyrights © 2023 Company Name. All Rights Reserved.</p>
           <div className="oraiko_logo">
             <p>Web Design & Web Developed by </p>
             <Image

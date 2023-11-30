@@ -19,19 +19,19 @@ const DesktopStickyFooter = () => {
                 <div className="seals d-flex align-items-center gap-3">
                   <Image
                     src={BestPrice}
-                    alt="Automatic Door Supply Best Price"
+                    alt="Company Name Best Price"
                     height={150}
                     width={200}
                   />
                   <a href="#" title="">
                     <Image
                       src={BestChoice}
-                      alt="Automatic Door Supply Best Choice"
+                      alt="Company Name Best Choice"
                       height={150}
                       width={166}
                     />
                   </a>
-                  <a href="#" title="Automatic Door Supply Certifite Service">
+                  <a href="#" title="Company Name Certifite Service">
                     <Image
                       src={CertifiteService}
                       alt="best price"
@@ -54,12 +54,12 @@ const DesktopStickyFooter = () => {
                   <a
                     href="#"
                     target="_blank"
-                    title="Automatic Door Supply on Google Reviews"
+                    title="Company Name on Google Reviews"
                     className="position-relative d-inline-flex"
                   >
                     <Image
                       src={googleReview}
-                      alt="Automatic Door Supply on Google Reviews"
+                      alt="Company Name on Google Reviews"
                     />
                   </a>
                 </div>

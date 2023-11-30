@@ -8,22 +8,8 @@
 */
 
 // inner page components
-import AdaDoorOperator from "@/_pages_/ada-door-operator/AdaDoorOperator";
-import AirportsAutomaticDoors from "@/_pages_/airports-automatic-doors/AirportsAutomaticDoors";
-import AutomaticDoorRepair from "@/_pages_/automatic-door-repair/AutomaticDoorRepair";
-import AutomaticDoorsInstallation from "@/_pages_/automatic-doors-installation/AutomaticDoorsInstallation";
-import ChurchTempleAutomaticDoors from "@/_pages_/church-temple-automatic-doors/ChurchTempleAutomaticDoors";
-import CommercialAutomaticDoors from "@/_pages_/commercial-automatic-doors/CommercialAutomaticDoors";
+import DummyContentComponent from "@/_pages_/dummy-content-component/DummyContentComponent";
 import Contact from "@/_pages_/contact/Contact";
-import CustomAutomaticDoors from "@/_pages_/custom-automatic-doors/CustomAutomaticDoors";
-import DoorDesign from "@/_pages_/door-design/DoorDesign";
-import DoorFabrication from "@/_pages_/door-fabrication/DoorFabrication";
-import HeavyTrafficAutomaticDoors from "@/_pages_/heavy-traffic-automatic-doors/HeavyTrafficAutomaticDoors";
-import HospitalAutomaticDoors from "@/_pages_/hospital-automatic-doors/HospitalAutomaticDoors";
-import InteriorAutomaticDoors from "@/_pages_/interior-automatic-doors/InteriorAutomaticDoors";
-import ResidentialBuildingAutomaticDoors from "@/_pages_/residential-building-automatic-doors/ResidentialBuildingAutomaticDoors";
-import SchoolAutomaticDoors from "@/_pages_/school-automatic-doors/SchoolAutomaticDoors";
-import StorefrontAutomaticDoors from "@/_pages_/storefront-automatic-doors/StorefrontAutomaticDoors";
 
 export const innerPageDataContent = {
   "about-our-company": {
@@ -31,7 +17,35 @@ export const innerPageDataContent = {
       title: "About our company",
       description: "About our company",
     },
-    pageContent: <h1>About us page</h1>,
+    pageContent: <DummyContentComponent />,
+  },
+  "automatic-door-supply-near-me": {
+    metaData: {
+      title: "Automatic door supply near me",
+      description: "Automatic door supply near me",
+    },
+    pageContent: <DummyContentComponent />,
+  },
+  "our-portfolio": {
+    metaData: {
+      title: "Our portfolio",
+      description: "Our portfolio",
+    },
+    pageContent: <DummyContentComponent />,
+  },
+  "customer-reviews": {
+    metaData: {
+      title: "Customer reviews",
+      description: "Customer reviews",
+    },
+    pageContent: <DummyContentComponent />,
+  },
+  resources: {
+    metaData: {
+      title: "Resources",
+      description: "Resources",
+    },
+    pageContent: <DummyContentComponent />,
   },
   contact: {
     layout: "FULL_PAGE",
@@ -46,21 +60,21 @@ export const innerPageDataContent = {
       title: "Door Design",
       description: "Door design",
     },
-    pageContent: <DoorDesign />,
+    pageContent: <DummyContentComponent />,
   },
   "door-fabrication": {
     metaData: {
       title: "Door fabrication",
       description: "Door fabrication",
     },
-    pageContent: <DoorFabrication />,
+    pageContent: <DummyContentComponent />,
   },
   "automatic-doors-installation": {
     metaData: {
       title: "Automatic doors installation",
       description: "Automatic doors installation",
     },
-    pageContent: <AutomaticDoorsInstallation />,
+    pageContent: <DummyContentComponent />,
   },
 
   "automatic-door-repair": {
@@ -68,70 +82,70 @@ export const innerPageDataContent = {
       title: "Automatic door repair",
       description: "Automatic door repair",
     },
-    pageContent: <AutomaticDoorRepair />,
+    pageContent: <DummyContentComponent />,
   },
   "hospital-automatic-doors": {
     metaData: {
       title: "Hospital automatic doors",
       description: "Hospital automatic doors",
     },
-    pageContent: <HospitalAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "commercial-automatic-doors": {
     metaData: {
       title: "Commercial automatic doors",
       description: "Commercial automatic doors",
     },
-    pageContent: <CommercialAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "residential-building-automatic-doors": {
     metaData: {
       title: "Residential building automatic doors",
       description: "Residential building automatic doors",
     },
-    pageContent: <ResidentialBuildingAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "ada-door-operator": {
     metaData: {
       title: "ada door operator",
       description: "ada door operator",
     },
-    pageContent: <AdaDoorOperator />,
+    pageContent: <DummyContentComponent />,
   },
   "interior-automatic-doors": {
     metaData: {
       title: "Interior automatic doors",
       description: "Interior automatic doors",
     },
-    pageContent: <InteriorAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "airports-automatic-doors": {
     metaData: {
       title: "Airports automatic doors",
       description: "Airports automatic doors",
     },
-    pageContent: <AirportsAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "school-automatic-doors": {
     metaData: {
       title: "School automatic doors",
       description: "School automatic doors",
     },
-    pageContent: <SchoolAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "church-temple-automatic-doors": {
     metaData: {
       title: "Church temple automatic doors",
       description: "Church temple automatic doors",
     },
-    pageContent: <ChurchTempleAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "heavy-traffic-automatic-doors": {
     metaData: {
       title: "Heavy traffic automatic doors",
       description: "Heavy traffic automatic doors",
     },
-    pageContent: <HeavyTrafficAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
 
   "storefront-automatic-doors": {
@@ -139,13 +153,13 @@ export const innerPageDataContent = {
       title: "Storefront automatic doors",
       description: "Storefront automatic doors",
     },
-    pageContent: <StorefrontAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
   "custom-automatic-doors": {
     metaData: {
       title: "Custom automatic doors",
-      description: "hello there",
+      description: "Custom automatic doors",
     },
-    pageContent: <CustomAutomaticDoors />,
+    pageContent: <DummyContentComponent />,
   },
 };

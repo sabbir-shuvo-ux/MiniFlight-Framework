@@ -6,8 +6,8 @@ import Tab from "react-bootstrap/Tab";
 import Image from "next/image";
 
 // image
-import WhoWeAreimg from "../../../public/about/adsBanner1.jpg";
-import AccreditationImg from "../../../public/about/adsBanner2.jpg";
+import WhoWeAreimg from "../../../public/dummy/door3.jpg";
+import AccreditationImg from "../../../public/dummy/door1.jpg";
 
 function WecomeTabs() {
   return (

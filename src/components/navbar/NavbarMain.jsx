@@ -12,12 +12,28 @@ import NavbarActions from "./NavbarActions";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 import MobileTopNavbar from "./MobileTopNavbar";
+import { useState } from "react";
 
 const NavbarMain = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavbarToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleNavbarCollapse = () => {
+    setExpanded(false); // Collapse the navbar when a menu item is selected
+  };
+
   return (
     <header className="custom_navbar">
       <MobileTopNavbar />
-      <Navbar collapseOnSelect expand="lg" className="navbar navbar-expand-lg">
+      <Navbar
+        expanded={expanded}
+        collapseOnSelect
+        expand="lg"
+        className="navbar navbar-expand-lg"
+      >
         <div className="container-fluid custom_fluid">
           <Link
             className="navbar-brand position-relative navbar_logo"
@@ -34,6 +50,7 @@ const NavbarMain = () => {
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             className="shadow-none"
+            onClick={handleNavbarToggle}
           >
             <FaBars size={30} color="white" />
           </Navbar.Toggle>
@@ -41,7 +58,7 @@ const NavbarMain = () => {
           {/* desktop view menus */}
           <DesktopMenu />
           {/* mobile version menus */}
-          <MobileMenu />
+          <MobileMenu handleNavbarCollapse={handleNavbarCollapse} />
           {/* Call to action btns */}
           <NavbarActions />
         </div>

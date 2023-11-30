@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Alert, Spinner } from "react-bootstrap";
+import { Alert, CloseButton, Spinner } from "react-bootstrap";
 
 const initialState = {
   name: "",
@@ -10,17 +10,22 @@ const initialState = {
 };
 const ContactForm = () => {
   const [state, setState] = useState(initialState);
-  const [result, setResult] = useState("");
+  const [message, setMessage] = useState({
+    isSuccess: false,
+    isMessage: "",
+  });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setState((pre) => ({ ...pre, [e.target.name]: e.target.value }));
   };
 
+  // submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setIsLoading(true);
+
       const res = await fetch("/api/send-mail", {
         method: "POST",
         body: JSON.stringify(state),
@@ -33,8 +38,17 @@ const ContactForm = () => {
       const data = await res.json();
 
       if (data.suceess) {
-        setResult(data.message);
+        setMessage((prev) => ({
+          ...prev,
+          isSuccess: data.success,
+          isMessage: data.message,
+        }));
       } else {
+        setMessage((prev) => ({
+          ...prev,
+          isSuccess: data.success,
+          isMessage: data.message,
+        }));
         throw new Error(data.message);
       }
     } catch (error) {
@@ -45,15 +59,29 @@ const ContactForm = () => {
     }
   };
 
+  // close Alert message
+  const handleAlertClose = () => {
+    setMessage((pre) => ({ ...pre, isMessage: "", isSuccess: false }));
+  };
+
   return (
     <form onSubmit={handleSubmit}>
-      {result && <Alert variant={"danger"}>{result}</Alert>}
+      {/* form submition message */}
+      {message.isMessage && (
+        <Alert variant={message.isSuccess ? "success" : "danger"}>
+          {message.isMessage}
+          <CloseButton
+            className="float-end"
+            onClick={handleAlertClose}
+            aria-label="Hide"
+          />
+        </Alert>
+      )}
       <input
         type="text"
         name="name"
         className="form-control shadow-none rounded-0 custom_form_control my-3"
         placeholder="Name"
-        required
         onChange={(e) => handleChange(e)}
         value={state.name}
       />
@@ -63,7 +91,6 @@ const ContactForm = () => {
         name="phone"
         className="form-control shadow-none rounded-0 custom_form_control my-3"
         placeholder="Phone"
-        required
         onChange={(e) => handleChange(e)}
         value={state.phone}
       />
@@ -72,7 +99,6 @@ const ContactForm = () => {
         name="email"
         className="form-control shadow-none rounded-0 custom_form_control my-3"
         placeholder="Email"
-        required
         onChange={(e) => handleChange(e)}
         value={state.email}
       />

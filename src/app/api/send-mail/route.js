@@ -1,17 +1,25 @@
+import formValidation from "@/utils/formValidation";
+import { mailOptions, transporter } from "@/utils/mail";
 import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
   try {
-    const data = await request.json();
+    const { name, email, phone, message } = await request.json();
 
-    console.log(data);
+    const res = formValidation(name, email, message, phone);
+
+    await transporter.sendMail({
+      ...mailOptions,
+      html: `<h1>Mail from website</h1><h3>${name}</h3><h3><a href="mailto:${email}">${email}</a></h3><h3><a href="tel:${phone}">${phone}</a></h3><h3>${message}</h3>`,
+    });
+
     return NextResponse.json(
-      { message: "no SMTP config found", suceess: true },
+      { message: "Mail suceessfully sent", success: true },
       { status: 200 }
     );
   } catch (err) {
     return NextResponse.json(
-      { message: err.message, suceess: false },
+      { message: err.message, success: false },
       { status: 500 }
     );
   }

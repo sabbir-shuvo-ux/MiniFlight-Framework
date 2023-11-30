@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-const AboutMenuData = ({ isMobile, data, path, extraClass }) => {
+const DropdownMenus = ({
+  isMobile,
+  data,
+  path,
+  extraClass,
+  handleNavbarCollapse,
+}) => {
   return (
     <ul
       className={
@@ -10,7 +16,7 @@ const AboutMenuData = ({ isMobile, data, path, extraClass }) => {
       {data.map((item, index) => {
         const newItem = item.replace(/-/g, " ");
         return (
-          <li key={index} className="menu_item">
+          <li onClick={handleNavbarCollapse} key={index} className="menu_item">
             <Link
               href={path ? `/${path}/${item}` : `/${item}`}
               title={`${newItem}`}
@@ -24,4 +30,4 @@ const AboutMenuData = ({ isMobile, data, path, extraClass }) => {
   );
 };
 
-export default AboutMenuData;
+export default DropdownMenus;

@@ -4,18 +4,25 @@ import DropdownMenus from "./DropdownMenus";
 import { NavDropdown, Navbar } from "react-bootstrap";
 import menuData from "@/AppData/menuData";
 
-const MobileMenu = () => {
+const MobileMenu = ({ handleNavbarCollapse }) => {
   const { aboutData, services } = menuData;
   return (
     <Navbar.Collapse id="mobileVersionNavbar" className="mobile_menus">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul
+        className="navbar-nav me-auto mb-2 mb-lg-0"
+        onSelect={handleNavbarCollapse}
+      >
         <NavDropdown
           title="About"
           id="basic-nav-dropdown"
           className="custom_mobile_dropdown"
         >
           {/* Mobile About menus */}
-          <DropdownMenus isMobile={true} data={aboutData.menus} />
+          <DropdownMenus
+            handleNavbarCollapse={handleNavbarCollapse}
+            isMobile={true}
+            data={aboutData.menus}
+          />
         </NavDropdown>
 
         <NavDropdown
@@ -25,13 +32,14 @@ const MobileMenu = () => {
         >
           {/* Mobile Service menus */}
           <DropdownMenus
+            handleNavbarCollapse={handleNavbarCollapse}
             isMobile={true}
             data={services.menus}
             path={services.path}
           />
         </NavDropdown>
 
-        <li className="nav-item">
+        <li className="nav-item" onClick={handleNavbarCollapse}>
           <Link
             className="nav-link"
             href="/gallery"
@@ -40,7 +48,7 @@ const MobileMenu = () => {
             gallery
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={handleNavbarCollapse}>
           <Link
             className="nav-link"
             href="/contact"

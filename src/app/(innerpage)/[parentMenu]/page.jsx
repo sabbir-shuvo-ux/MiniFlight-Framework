@@ -29,8 +29,8 @@ export const generateMetadata = ({ params }) => {
   };
 };
 
-// export const generateStaticParams = async () => {
-//   return Object.keys(innerPageDataContent).map((item) => ({
-//     parentMenu: item,
-//   }));
-// };
+export const generateStaticParams = async () => {
+  return Object.keys(innerPageDataContent).map((item) => ({
+    parentMenu: item,
+  }));
+};

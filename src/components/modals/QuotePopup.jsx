@@ -29,9 +29,8 @@ const QuotePopup = () => {
           <div className="row">
             <div className="col-lg-4 d-md-block d-none">
               <p className="left_text">
-                Here at Automatic Door Supply - Your Automatic Door specialists,
-                we’re always ready to assist you for your Automatic Door
-                service.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                quia deleniti, quam eligendi voluptas iusto!
               </p>
               <h3>Follow Us</h3>
               <ul className="list-unstyled socials_icons">

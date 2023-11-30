@@ -18,11 +18,7 @@ const DesktopMenu = () => {
           <DropdownMenus data={aboutData.menus} extraClass="small_width" />
         </li>
         <li className="nav-item custom_dropdown">
-          <Link
-            className="nav-link"
-            href="#"
-            title="Automatic Door Supply Services"
-          >
+          <Link className="nav-link" href="#" title="Company Name Services">
             services
           </Link>
           {/* Services menu */}
@@ -37,7 +33,7 @@ const DesktopMenu = () => {
           <Link
             className="nav-link"
             href="/gallery"
-            title="Automatic Door Supply Gallery"
+            title="Company Name Gallery"
           >
             gallery
           </Link>
@@ -46,7 +42,7 @@ const DesktopMenu = () => {
           <Link
             className="nav-link"
             href="/contact"
-            title="Automatic Door Supply Contact"
+            title="Company Name Contact"
           >
             contact
           </Link>

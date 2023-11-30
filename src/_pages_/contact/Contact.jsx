@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="col-md-6">
             <div className="contact_page_left">
               <h3 className="mb-5">
-                Automatic Door Supply with main offices located at:
+                Company Name with main offices located at:
               </h3>
               <div className="container-fluid p-0">
                 <div className="row">

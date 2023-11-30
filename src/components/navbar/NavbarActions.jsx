@@ -11,7 +11,7 @@ const NavbarActions = () => {
         <a
           className="phone_number_main"
           href={`tel:${PHONE_NUMBER}`}
-          title="Call Automatic Door Supply Toll Free"
+          title="Call Company Name Toll Free"
         >
           {PHONE_NUMBER}
         </a>
@@ -19,7 +19,7 @@ const NavbarActions = () => {
       <button
         onClick={() => setIsModalOpen(true)}
         className="main_btn"
-        title="Get Estimate from Automatic Door Supply"
+        title="Get Estimate from Company Name"
       >
         GET ESTIMATE
       </button>

@@ -43,7 +43,7 @@ const MobileMenu = ({ handleNavbarCollapse }) => {
           <Link
             className="nav-link"
             href="/gallery"
-            title="Automatic Door Supply Gallery"
+            title="Company Name Gallery"
           >
             gallery
           </Link>
@@ -52,7 +52,7 @@ const MobileMenu = ({ handleNavbarCollapse }) => {
           <Link
             className="nav-link"
             href="/contact"
-            title="Automatic Door Supply Contact"
+            title="Company Name Contact"
           >
             contact
           </Link>

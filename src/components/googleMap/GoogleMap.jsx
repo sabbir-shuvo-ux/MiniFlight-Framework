@@ -8,7 +8,7 @@ const GoogleMap = () => {
         width={1536}
         height={400}
         style={{ border: 0, width: "100%" }}
-        title="Find Automatic Door Supply on Google Map"
+        title="Find Company Name on Google Map"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

@@ -54,16 +54,16 @@ const SliderContainer = () => {
                 src={isMobile ? slide.mobileImg : slide.img}
                 alt={slide.title}
                 title={slide.title}
-                className="d_md_none"
+                className="d_md_none object-fit-cover"
                 fill
-                sizes="(min-width: 2900px) calc(80vw + 580px), (min-width: 2560px) calc(31.25vw + 1760px), (min-width: 2160px) calc(52.63vw + 1023px), (min-width: 1900px) 1900px, (min-width: 1740px) 1740px, (min-width: 1620px) 1620px, (min-width: 1400px) 1400px, (min-width: 1140px) calc(25vw + 855px), (min-width: 920px) 920px, (min-width: 800px) 800px, (min-width: 740px) 700px, calc(95.24vw + 14px)"
+                sizes="(min-width: 2960px) 2960px, (min-width: 2720px) 2720px, (min-width: 2480px) 2480px, (min-width: 2260px) calc(40vw + 1356px), (min-width: 2120px) 2120px, (min-width: 1920px) 1920px, (min-width: 1740px) 1740px, (min-width: 1580px) calc(28.57vw + 1129px), (min-width: 1500px) 1480px, (min-width: 1460px) calc(900vw - 11840px), (min-width: 1180px) calc(46.15vw + 635px), (min-width: 1100px) 1100px, (min-width: 940px) 940px, (min-width: 780px) 780px, (min-width: 680px) 680px, (min-width: 620px) 620px, (min-width: 540px) 540px, (min-width: 460px) 420px, calc(85.71vw + 43px)"
                 priority={index === 0 ? true : false}
               />
               <div className="home_slider_content container-fluid custom_fluid">
-                <div className="slider_inner_content">
+                <div className="slider_inner_content position-relative">
                   <div className="banner_subtitle">
                     <h4 className="banner_subtitle_text text-uppercase h4">
-                      Automatic Door
+                      Lorem Ipsume
                     </h4>
                   </div>
                   {index === 0 ? (

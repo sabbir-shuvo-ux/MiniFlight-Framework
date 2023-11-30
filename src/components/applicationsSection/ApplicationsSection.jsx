@@ -2,7 +2,7 @@ import "@/assets/applicationsSection.scss";
 import Image from "next/image";
 
 // image
-import FaqImg from "../../../public/faq/faq-img.jpg";
+import FaqImg from "../../../public/dummy/banner1-small.jpg";
 import Faq from "../FaqComponent/Faq";
 import { faqHomeData } from "@/AppData/faqHomeData";
 
@@ -30,8 +30,8 @@ const ApplicationsSection = () => {
                 src={FaqImg}
                 className="w-100 h-auto"
                 sizes="(min-width: 1600px) 42.5vw, (min-width: 780px) calc(50vw - 24px), calc(100vw - 24px)"
-                alt="Automatic Door Supply Door"
-                title="Automatic Door Supply Door"
+                alt="application img"
+                title="application img"
               />
             </div>
           </div>

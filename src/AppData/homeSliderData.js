@@ -1,44 +1,36 @@
-import banner1 from "../../public/banner/1.jpg";
-import banner2 from "../../public/banner/2.jpg";
-import banner3 from "../../public/banner/3.jpg";
-import banner4 from "../../public/banner/4.jpg";
-import banner5 from "../../public/banner/5.jpg";
+import banner1 from "../../public/dummy/banner1.jpg";
+import banner2 from "../../public/dummy/banner2.jpg";
+import banner3 from "../../public/dummy/banner3.jpg";
+import banner4 from "../../public/dummy/banner4.jpg";
 
-import bannerMobile1 from "../../public/banner/1-small.webp";
-import bannerMobile2 from "../../public/banner/2-small.webp";
-import bannerMobile3 from "../../public/banner/3-small.webp";
-import bannerMobile4 from "../../public/banner/4-small.webp";
-import bannerMobile5 from "../../public/banner/5-small.webp";
+import bannerMobile1 from "../../public/dummy/banner1-small.jpg";
+import bannerMobile2 from "../../public/dummy/banner2-small.jpg";
+import bannerMobile3 from "../../public/dummy/banner3-small.jpg";
+import bannerMobile4 from "../../public/dummy/banner4-small.jpg";
 
 const homeSliderData = [
   {
     img: banner1,
     mobileImg: bannerMobile1,
-    title: "Door Closer Systems",
+    title: "Lorem Ipsume Dollar",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit proin pulvinar quis.",
   },
   {
     img: banner2,
     mobileImg: bannerMobile2,
-    title: "Door Installation",
+    title: "Lorem Ipsume Dollar",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit proin pulvinar quis.",
   },
   {
     img: banner3,
     mobileImg: bannerMobile3,
-    title: "Door Installation",
+    title: "Lorem Ipsume Dollar",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit proin pulvinar quis.",
   },
   {
     img: banner4,
     mobileImg: bannerMobile4,
-    title: "Door Fabrication",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit proin pulvinar quis.",
-  },
-  {
-    img: banner5,
-    mobileImg: bannerMobile5,
-    title: "Door Design",
+    title: "Lorem Ipsume Dollar",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit proin pulvinar quis.",
   },
 ];

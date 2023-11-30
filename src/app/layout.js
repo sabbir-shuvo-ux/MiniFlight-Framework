@@ -12,8 +12,8 @@ const QuotePopup = dynamic(() => import("@/components/modals/QuotePopup"), {
 // metadata
 export const metadata = {
   title: {
-    template: "%s | Automatic Door Supply",
-    default: "Automatic Door Supply",
+    template: "%s | Expert door Supply ",
+    default: "Expert door Supply",
   },
   description:
     "A local company providing door design, door fabrication, door installation, door repair throughout in New York.",

@@ -24,8 +24,8 @@ const ReviewHome = () => {
               >
                 <Image
                   src={GoogleLogo}
-                  alt="Automatic Door Supply on Google Reviews"
-                  title="Automatic Door Supply on Google Reviews"
+                  alt="Google Reviews"
+                  title="Google Reviews"
                   className="h-auto w-100 object-fit-contain"
                 />
               </Link>
@@ -35,8 +35,8 @@ const ReviewHome = () => {
               >
                 <Image
                   src={YelpLogo}
-                  alt="Automatic Door Supply on Yelp Reviews"
-                  title="Automatic Door Supply on Yelp Reviews"
+                  alt="Yelp Reviews"
+                  title="Yelp Reviews"
                   className="h-auto w-100 object-fit-contain"
                 />
               </Link>

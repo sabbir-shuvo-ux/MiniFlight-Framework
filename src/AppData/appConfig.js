@@ -1,5 +1,5 @@
-export const PHONE_NUMBER = "(800) 366-3333";
-export const EMAIL = "info@ads.com";
+export const PHONE_NUMBER = "(000) 000-0000";
+export const EMAIL = "website@info.com";
 
 // mail config
 export const mailConfig = {
@@ -10,5 +10,5 @@ export const mailConfig = {
   PASS: "",
   FROM: "",
   TO: "", // IF MULTIPLE VALUE USE COMMA. LIKE THIS:- "bar@example.com, baz@example.com"
-  SUBJECT: "Automatic Door Supply Mail",
+  SUBJECT: "Email subject",
 };

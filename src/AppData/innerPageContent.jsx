@@ -10,6 +10,7 @@
 // inner page components
 import DummyContentComponent from "@/_pages_/dummy-content-component/DummyContentComponent";
 import Contact from "@/_pages_/contact/Contact";
+import Gallery from "@/_pages_/gallery/Gallery";
 
 export const innerPageDataContent = {
   "about-our-company": {
@@ -46,6 +47,14 @@ export const innerPageDataContent = {
       description: "Resources",
     },
     pageContent: <DummyContentComponent />,
+  },
+  gallery: {
+    layout: "FULL_PAGE",
+    metaData: {
+      title: "Gallery",
+      description: "Gallery",
+    },
+    pageContent: <Gallery />,
   },
   contact: {
     layout: "FULL_PAGE",

@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="footer_main">
         <FooterMain />
 
-        <DesktopStickyFooter />
+        {/* <DesktopStickyFooter /> */}
       </footer>
     </>
   );

@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Custom Micro-Framework for Modern Web Development
 
-## Getting Started
+This project is more than just a website—it's a custom micro-framework developed using **Next.js**, tailored specifically for our company's internal and external development needs.
 
-First, run the development server:
+## 🚀 Overview
+
+Inspired by [Flight](https://github.com/flightphp/core), this framework is built with a **strong focus on performance optimization**, code reusability, and developer experience. It simplifies common tasks and provides built-in tools to help teams build faster and more efficiently.
+
+## ⚙️ Key Features
+
+- **Simple Email Sending**  
+  Send emails with just a single function call—no need to configure boilerplate logic every time.
+
+- **Built-in Breadcrumbs**  
+  Automatically handle navigation context with customizable breadcrumb support.
+
+- **Reusable Components**  
+  Includes common UI elements like:
+  - Dialogs
+  - Alerts
+  - And more...
+
+- **Optimized Performance**  
+  Designed with speed and efficiency in mind, leveraging the full power of Next.js and modern best practices.
+
+## 🧱 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Utilities**: Custom hooks, context APIs, and reusable logic blocks
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
